@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bgGrad-p6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0f5"/>
+      <stop offset="100%" stop-color="#d0dde8"/>
+    </linearGradient>
+    <linearGradient id="pipeGrad-p6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bbb"/>
+      <stop offset="50%" stop-color="#888"/>
+      <stop offset="100%" stop-color="#555"/>
+    </linearGradient>
+    <linearGradient id="sensorGrad-p6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a90c8"/>
+      <stop offset="100%" stop-color="#1d4f7a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgGrad-p6)"/>
+  <g transform="translate(200,150)">
+    <ellipse cx="0" cy="60" rx="160" ry="5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="-160" y="-30" width="320" height="60" rx="6" fill="url(#pipeGrad-p6)"/>
+    <rect x="-160" y="-30" width="320" height="60" rx="6" fill="none" stroke="#444" stroke-width="1.5"/>
+    <rect x="-150" y="-22" width="20" height="44" rx="2" fill="#666" opacity="0.6"/>
+    <rect x="130" y="-22" width="20" height="44" rx="2" fill="#666" opacity="0.6"/>
+    <rect x="-155" y="-35" width="50" height="10" rx="2" fill="#888"/>
+    <rect x="105" y="-35" width="50" height="10" rx="2" fill="#888"/>
+    <path d="M -150 -10 L -100 -10" stroke="#ff9500" stroke-width="2" stroke-dasharray="3,2" opacity="0.8"/>
+    <path d="M 150 -10 L 100 -10" stroke="#ff9500" stroke-width="2" stroke-dasharray="3,2" opacity="0.8"/>
+    <g transform="translate(-65,0)">
+      <rect x="-15" y="-50" width="30" height="30" rx="3" fill="url(#sensorGrad-p6)"/>
+      <circle cx="0" cy="-35" r="6" fill="#ff9500"/>
+      <circle cx="0" cy="-35" r="3" fill="#fff"/>
+      <path d="M 0 -29 L 0 -10" stroke="#ff9500" stroke-width="1" stroke-dasharray="2,1"/>
+    </g>
+    <g transform="translate(65,0)">
+      <rect x="-15" y="-50" width="30" height="30" rx="3" fill="url(#sensorGrad-p6)"/>
+      <circle cx="0" cy="-35" r="6" fill="#4a90c8"/>
+      <circle cx="0" cy="-35" r="3" fill="#fff"/>
+      <path d="M 0 -29 L 0 -10" stroke="#4a90c8" stroke-width="1" stroke-dasharray="2,1"/>
+    </g>
+    <g transform="translate(0,30)">
+      <rect x="-40" y="-15" width="80" height="30" rx="4" fill="url(#sensorGrad-p6)"/>
+      <rect x="-35" y="-10" width="70" height="20" rx="2" fill="#0a1929"/>
+      <text x="0" y="3" font-family="Arial,sans-serif" font-size="8" font-weight="bold" fill="#4a90c8" text-anchor="middle">3812</text>
+      <rect x="-30" y="-7" width="3" height="14" fill="#ff9500"/>
+      <rect x="-22" y="-7" width="3" height="14" fill="#4a90c8"/>
+      <rect x="-14" y="-7" width="3" height="14" fill="#4a90c8"/>
+      <rect x="-6" y="-7" width="3" height="14" fill="#4a90c8"/>
+      <rect x="2" y="-7" width="3" height="14" fill="#4a90c8"/>
+      <rect x="10" y="-7" width="3" height="14" fill="#4a90c8"/>
+      <rect x="18" y="-7" width="3" height="14" fill="#4a90c8"/>
+      <rect x="26" y="-7" width="3" height="14" fill="#ff9500"/>
+    </g>
+    <text x="-150" y="25" font-family="Arial,sans-serif" font-size="6" fill="#1d4f7a">UPSTREAM</text>
+    <text x="115" y="25" font-family="Arial,sans-serif" font-size="6" fill="#1d4f7a">DOWNSTREAM</text>
+  </g>
+  <text x="200" y="265" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#1d4f7a" text-anchor="middle">ROSEMOUNT 3812</text>
+  <text x="200" y="280" font-family="Arial,sans-serif" font-size="9" fill="#4a90c8" text-anchor="middle">ULTRASONIC FLOW METER</text>
+</svg>

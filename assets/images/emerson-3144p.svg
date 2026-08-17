@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bgGrad-p2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#faf6f0"/>
+      <stop offset="100%" stop-color="#f0e8d8"/>
+    </linearGradient>
+    <linearGradient id="probeGrad-p2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#888"/>
+      <stop offset="50%" stop-color="#aaa"/>
+      <stop offset="100%" stop-color="#666"/>
+    </linearGradient>
+    <linearGradient id="housingGrad-p2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a90c8"/>
+      <stop offset="100%" stop-color="#1d4f7a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgGrad-p2)"/>
+  <g transform="translate(200,140)">
+    <ellipse cx="0" cy="90" rx="100" ry="6" fill="rgba(0,0,0,0.15)"/>
+    <rect x="-50" y="-50" width="100" height="60" rx="10" fill="url(#housingGrad-p2)"/>
+    <rect x="-45" y="-45" width="90" height="20" rx="3" fill="#1a3a5a" opacity="0.5"/>
+    <rect x="-35" y="-38" width="70" height="12" rx="2" fill="#0a1929"/>
+    <text x="0" y="-29" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#ff9500" text-anchor="middle">3144P</text>
+    <text x="-25" y="-15" font-family="Arial,sans-serif" font-size="6" fill="#9bb5d0">LCD</text>
+    <rect x="15" y="-18" width="30" height="8" rx="1" fill="#1a1a1a"/>
+    <circle cx="30" cy="-14" r="2" fill="#4a90c8"/>
+    <rect x="-12" y="10" width="24" height="20" fill="#0a1929" opacity="0.6"/>
+    <rect x="-15" y="30" width="30" height="6" fill="#1a3a5a"/>
+    <rect x="-8" y="36" width="16" height="35" fill="url(#probeGrad-p2)"/>
+    <rect x="-3" y="71" width="6" height="50" fill="url(#probeGrad-p2)"/>
+    <ellipse cx="0" cy="125" rx="5" ry="3" fill="#ff6b35"/>
+    <path d="M -8 75 Q -12 90 -8 105 Q -4 120 -8 130" stroke="#ff6b35" stroke-width="1" fill="none" opacity="0.4"/>
+    <path d="M 8 75 Q 12 90 8 105 Q 4 120 8 130" stroke="#ff6b35" stroke-width="1" fill="none" opacity="0.4"/>
+    <text x="-45" y="0" font-family="Arial,sans-serif" font-size="6" fill="#1d4f7a">°C</text>
+    <line x1="-30" y1="45" x2="20" y2="45" stroke="#666" stroke-width="0.5" opacity="0.5"/>
+  </g>
+  <text x="200" y="265" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#1d4f7a" text-anchor="middle">ROSEMOUNT 3144P</text>
+  <text x="200" y="280" font-family="Arial,sans-serif" font-size="9" fill="#4a90c8" text-anchor="middle">TEMPERATURE TRANSMITTER</text>
+</svg>

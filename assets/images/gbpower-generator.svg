@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bgG-GEN" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5f8fc"/>
+      <stop offset="100%" stop-color="#e8eef5"/>
+    </linearGradient>
+    <linearGradient id="bodyG-GEN" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a6a9a"/>
+      <stop offset="100%" stop-color="#1a3d6a"/>
+    </linearGradient>
+    <linearGradient id="canopyG-GEN" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a5a7a"/>
+      <stop offset="100%" stop-color="#1a3d5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgG-GEN)"/>
+  <!-- Floor shadow -->
+  <ellipse cx="200" cy="225" rx="120" ry="7" fill="rgba(0,0,0,0.15)"/>
+  <g transform="translate(200,140)">
+    <!-- Canopy/Housing -->
+    <rect x="-110" y="-60" width="220" height="110" rx="6" fill="url(#canopyG-GEN)"/>
+    <!-- Top edge -->
+    <rect x="-110" y="-60" width="220" height="8" rx="4" fill="#1a2d4a"/>
+    <!-- Vent grilles left -->
+    <rect x="-100" y="-45" width="50" height="35" rx="3" fill="#0a1a2a" opacity="0.8"/>
+    <line x1="-98" y1="-42" x2="-54" y2="-42" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="-98" y1="-38" x2="-54" y2="-38" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="-98" y1="-34" x2="-54" y2="-34" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="-98" y1="-30" x2="-54" y2="-30" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="-98" y1="-26" x2="-54" y2="-26" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="-98" y1="-22" x2="-54" y2="-22" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="-98" y1="-18" x2="-54" y2="-18" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="-98" y1="-14" x2="-54" y2="-14" stroke="#3a6a9a" stroke-width="0.6"/>
+    <!-- Control Panel -->
+    <rect x="-42" y="-48" width="84" height="40" rx="4" fill="#0a1929"/>
+    <rect x="-37" y="-44" width="74" height="14" rx="2" fill="#0d2818"/>
+    <text x="0" y="-34" font-family="Arial,sans-serif" font-size="8" font-weight="bold" fill="#00ff88" text-anchor="middle">GEN 2500kVA</text>
+    <!-- LED row -->
+    <circle cx="-30" cy="-23" r="3" fill="#00ff88"/>
+    <circle cx="-18" cy="-23" r="3" fill="#ff9500" opacity="0.8"/>
+    <circle cx="-6" cy="-23" r="3" fill="#3a6a9a" opacity="0.5"/>
+    <circle cx="6" cy="-23" r="3" fill="#3a6a9a" opacity="0.5"/>
+    <circle cx="18" cy="-23" r="3" fill="#3a6a9a" opacity="0.5"/>
+    <circle cx="30" cy="-23" r="3" fill="#3a6a9a" opacity="0.5"/>
+    <!-- Key switch -->
+    <circle cx="-28" cy="-14" r="5" fill="#1a2d4a" stroke="#4a6a8a" stroke-width="1"/>
+    <circle cx="-28" cy="-14" r="2" fill="#ff9500"/>
+    <!-- Emergency button -->
+    <circle cx="28" cy="-14" r="6" fill="#cc2222" stroke="#881111" stroke-width="1"/>
+    <!-- Vent grilles right -->
+    <rect x="50" y="-45" width="50" height="35" rx="3" fill="#0a1a2a" opacity="0.8"/>
+    <line x1="52" y1="-42" x2="96" y2="-42" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="52" y1="-38" x2="96" y2="-38" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="52" y1="-34" x2="96" y2="-34" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="52" y1="-30" x2="96" y2="-30" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="52" y1="-26" x2="96" y2="-26" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="52" y1="-22" x2="96" y2="-22" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="52" y1="-18" x2="96" y2="-18" stroke="#3a6a9a" stroke-width="0.6"/>
+    <line x1="52" y1="-14" x2="96" y2="-14" stroke="#3a6a9a" stroke-width="0.6"/>
+    <!-- Exhaust pipe -->
+    <rect x="-95" y="-75" width="14" height="18" rx="2" fill="#1a1a1a"/>
+    <ellipse cx="-88" cy="-75" rx="7" ry="3" fill="#0a0a0a"/>
+    <!-- Body lower section -->
+    <rect x="-110" y="-5" width="220" height="55" rx="3" fill="#1a3d5a"/>
+    <!-- Access door lines -->
+    <line x1="-50" y1="-5" x2="-50" y2="50" stroke="#0a1a2a" stroke-width="1.5"/>
+    <line x1="50" y1="-5" x2="50" y2="50" stroke="#0a1a2a" stroke-width="1.5"/>
+    <!-- Door handles -->
+    <rect x="-44" y="15" width="4" height="14" rx="1" fill="#0a1a2a"/>
+    <rect x="40" y="15" width="4" height="14" rx="1" fill="#0a1a2a"/>
+    <!-- Fuel gauge -->
+    <circle cx="0" cy="20" r="12" fill="#0a1929" stroke="#4a6a8a" stroke-width="1"/>
+    <circle cx="0" cy="20" r="9" fill="#1a2d4a"/>
+    <line x1="0" y1="20" x2="5" y2="13" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="0" cy="20" r="1.5" fill="#00ff88"/>
+    <!-- GB POWER logo plate -->
+    <rect x="-25" y="38" width="50" height="10" rx="1" fill="#0a1a2a"/>
+    <text x="0" y="46" font-family="Arial,sans-serif" font-size="7" font-weight="bold" fill="#3a6a9a" text-anchor="middle">GB POWER</text>
+    <!-- Base frame -->
+    <rect x="-115" y="50" width="230" height="8" fill="#1a1a1a"/>
+    <!-- Mounting feet -->
+    <rect x="-110" y="58" width="12" height="6" fill="#1a1a1a"/>
+    <rect x="98" y="58" width="12" height="6" fill="#1a1a1a"/>
+  </g>
+  <text x="200" y="265" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#1a3d6a" text-anchor="middle">GB POWER · DIESEL GENERATOR</text>
+  <text x="200" y="280" font-family="Arial,sans-serif" font-size="9" fill="#3a6a9a" text-anchor="middle">6kVA – 3MVA · CANOPY SOUNDPROOF</text>
+</svg>

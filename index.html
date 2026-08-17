@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shanghai Lock and Load Fluid Transfer Technology Co., Ltd. - Specialized in fluid transfer technology, industrial automation control, valves, pumps, and precision measurement instruments. Serving 50+ countries worldwide.">
+    <meta name="keywords" content="fluid transfer technology, industrial automation, dry-break couplings, loading arms, precision measurement, valves, pumps, TODO, EMCO Wheaton, Anton Paar, FEEJOY, EMERSON, GB Power, UPS, diesel generators, switchgear, ATS, power distribution">
+    <title>Lock &amp; Load | Fluid Technology · Smart Future</title>
+    <link rel="icon" type="image/png" href="assets/images/logo-new.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Global Particle Background (all sections) -->
+    <div class="global-particles" id="globalParticles"></div>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="assets/images/logo-new.png" alt="Lock & Load Logo" class="loader-logo-img">
+            </div>
+            <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+            <p class="loader-subtitle">Fluid Technology · Smart Future</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/images/logo-new.png" alt="Lock & Load Logo" class="nav-logo-img">
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#business" data-i18n="nav.business">Business</a></li>
+                <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
+                <li><a href="#products" data-i18n="nav.products">Products</a></li>
+                <li><a href="#industries" data-i18n="nav.industries">Industries</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="lang-toggle" id="langToggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="zh">中文</button>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-brand">Lock<span class="amp">&amp;</span>Load</span>
+            </h1>
+            <p class="hero-cn-name" data-i18n="hero.cnName">逻克流体</p>
+            <p class="hero-tagline">
+                <span data-i18n="hero.tagline1">Fluid Technology</span>
+                <span class="hero-dot">·</span>
+                <span data-i18n="hero.tagline2">Smart Future</span>
+            </p>
+            <p class="hero-desc" data-i18n="hero.desc">Specialized in fluid transfer technology and industrial automation control — delivering comprehensive solutions for industrial fluid control systems worldwide.</p>
+            <div class="hero-cta">
+                <a href="#products" class="btn btn-primary" data-i18n="hero.cta1">Explore Products</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero.cta2">Get in Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-num" data-count="50">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label" data-i18n="hero.stat1">Countries Served</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-num" data-count="300">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label" data-i18n="hero.stat2">Projects Delivered</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-num" data-count="15">0</span>
+                    <span class="stat-label" data-i18n="hero.stat3">Years Expertise</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span data-i18n="hero.scroll">Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title" data-i18n="about.title">About Us</h2>
+                <p class="section-subtitle" data-i18n="about.subtitle">Company Overview</p>
+            </div>
+
+            <div class="about-text">
+                <p data-i18n="about.p1">Shanghai Lock and Load Fluid Transfer Technology Co., Ltd. and Lock and Load Limited are technology-driven enterprises specializing in fluid transfer technology and industrial automation control.</p>
+                <p data-i18n="about.p2">The company integrates technical services, product distribution, equipment manufacturing, and import &amp; export trade, dedicated to delivering comprehensive professional solutions for industrial fluid control systems.</p>
+                <p data-i18n="about.p3">Since its inception, the company has consistently placed technological innovation at its core. Backed by a skilled technical team and extensive industry expertise, we serve clients across chemical, energy, manufacturing, and environmental protection sectors with premium products and technical services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Scope -->
+    <section class="section business" id="business">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title" data-i18n="business.title">Business Scope</h2>
+                <p class="section-subtitle" data-i18n="business.subtitle">Comprehensive Industrial Solutions</p>
+            </div>
+
+            <div class="business-grid">
+                <div class="biz-card" data-delay="0">
+                    <div class="biz-card-num">01</div>
+                    <div class="biz-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4L4 10V22L16 28L28 22V10L16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 16L28 10M16 16L4 10M16 16V28" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 data-i18n="business.b1Title">Technical Services &amp; Development</h3>
+                    <p data-i18n="business.b1Desc">Full-chain services including fluid technology services, technology development, technical consultation, technical exchanges, technology transfer, and technology promotion.</p>
+                </div>
+                <div class="biz-card" data-delay="1">
+                    <div class="biz-card-num">02</div>
+                    <div class="biz-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="24" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M10 8V4M22 8V4M4 14H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="19" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 data-i18n="business.b2Title">Industrial Automation Control</h3>
+                    <p data-i18n="business.b2Desc">Sales and integration solutions of industrial automatic control system devices, helping enterprises achieve intelligent production and process optimization.</p>
+                </div>
+                <div class="biz-card" data-delay="2">
+                    <div class="biz-card-num">03</div>
+                    <div class="biz-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4C10 4 6 8 6 14C6 20 16 28 16 28C16 28 26 20 26 14C26 8 22 4 16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="16" cy="14" r="4" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 data-i18n="business.b3Title">Valves &amp; Pump Equipment</h3>
+                    <p data-i18n="business.b3Desc">Professional sales of valves, stopcocks, pumps, and vacuum equipment, covering all core components of industrial fluid control.</p>
+                </div>
+                <div class="biz-card" data-delay="3">
+                    <div class="biz-card-num">04</div>
+                    <div class="biz-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 10H26M6 16H26M6 22H26M10 6V26M22 6V26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="4" y="4" width="24" height="24" rx="2" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 data-i18n="business.b4Title">Mechanical Equipment &amp; Instruments</h3>
+                    <p data-i18n="business.b4Desc">Sales of mechanical equipment, electrical equipment, instruments and meters, electronic products, and hardware products, meeting diverse industrial demands.</p>
+                </div>
+                <div class="biz-card" data-delay="4">
+                    <div class="biz-card-num">05</div>
+                    <div class="biz-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 26V12L16 4L26 12V26H18V18H14V26H6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 26H26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 data-i18n="business.b5Title">Equipment Manufacturing</h3>
+                    <p data-i18n="business.b5Desc">Manufacturing of mechanical and electrical equipment and specialized equipment, providing customized production services.</p>
+                </div>
+                <div class="biz-card" data-delay="5">
+                    <div class="biz-card-num">06</div>
+                    <div class="biz-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/><path d="M4 16H28M16 4C20 8 20 24 16 28C12 24 12 8 16 4Z" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 data-i18n="business.b6Title">Import &amp; Export Trade</h3>
+                    <p data-i18n="business.b6Desc">Complete qualifications for both goods and technology import &amp; export, connected to global market resources.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Culture -->
+    <section class="section culture" id="culture">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title" data-i18n="culture.title">Corporate Culture</h2>
+                <p class="section-subtitle" data-i18n="culture.subtitle">Our Core Values</p>
+            </div>
+
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <div class="culture-char">技</div>
+                    <div class="culture-content">
+                        <h3 data-i18n="culture.c1Title">Innovation</h3>
+                        <p data-i18n="culture.c1Desc">Driven by technological innovation, we continuously advance in fluid transmission and industrial automation, driving progress in the industry.</p>
+                    </div>
+                </div>
+                <div class="culture-card">
+                    <div class="culture-char">客</div>
+                    <div class="culture-content">
+                        <h3 data-i18n="culture.c2Title">Customer First</h3>
+                        <p data-i18n="culture.c2Desc">Customer-oriented, providing professional, efficient, and reliable technical services and product solutions.</p>
+                    </div>
+                </div>
+                <div class="culture-card">
+                    <div class="culture-char">诚</div>
+                    <div class="culture-content">
+                        <h3 data-i18n="culture.c3Title">Integrity</h3>
+                        <p data-i18n="culture.c3Desc">Adhering to integrity as the foundation, with A-level tax credit rating, gaining market recognition through quality and reputation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Cooperation Brands -->
+    <section class="section partners" id="partners">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2 class="section-title" data-i18n="partners.title">Our Strategic Partner Brands</h2>
+                <p class="section-subtitle" data-i18n="partners.subtitle"></p>
+            </div>
+
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-logo"><img src="assets/images/emerson-logo.webp" alt="EMERSON"></div>
+                    <p class="partner-desc" data-i18n="partners.p1Desc">A global leader in industrial automation, providing precision measurement, control valves, and asset management solutions that drive safety, reliability, and efficiency in process industries worldwide.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo"><img src="assets/images/anton-paar-logo.png" alt="Anton Paar"></div>
+                    <p class="partner-desc" data-i18n="partners.p2Desc">A century-old brand of precision measuring instruments, offering high-end laboratory equipment such as densitometers, viscometers, and alcohol meters.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo"><img src="assets/images/emco-wheaton-logo.webp" alt="EMCO Wheaton"></div>
+                    <p class="partner-desc" data-i18n="partners.p3Desc">The world's leading manufacturer of loading arms and API dry-break couplings, widely used in ship and petrochemical loading industries.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo"><img src="assets/images/todo-logo.jpg" alt="TODO"></div>
+                    <p class="partner-desc" data-i18n="partners.p4Desc">A benchmark brand in dry-break couplings and tank units, specially designed for safe transmission of oil products and chemical media.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo partner-logo-feejoy"><img src="assets/images/feejoy-logo.png" alt="FEEJOY"></div>
+                    <p class="partner-desc" data-i18n="partners.p5Desc">An intelligent sensing solutions expert with 20 years of experience, specializing in process instruments including radar level meters, flow meters, and temperature & pressure sensors for industrial IoT applications.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo"><img src="assets/images/gbpower-logo-new.png" alt="GB Power"></div>
+                    <p class="partner-desc" data-i18n="partners.p6Desc">A UK-based power solutions specialist established in 2016, providing UPS systems, diesel generators, LV switchgear, power distribution units, and advanced SCADA control systems, certified as a Schneider panel manufacturer with ISO 9001/14001/45001 accreditations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">05</span>
+                <h2 class="section-title" data-i18n="products.title">Product Showcase</h2>
+                <p class="section-subtitle" data-i18n="products.subtitle">Premium Industrial Equipment</p>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <button class="product-tab active" data-tab="emerson">EMERSON</button>
+                <button class="product-tab" data-tab="anton">Anton Paar</button>
+                <button class="product-tab" data-tab="emco">EMCO Wheaton</button>
+                <button class="product-tab" data-tab="todo">TODO</button>
+                <button class="product-tab" data-tab="feejoy">FEEJOY</button>
+                <button class="product-tab" data-tab="gbpower">GB Power</button>
+            </div>
+
+            <!-- TODO Products -->
+            <div class="product-panel" data-panel="todo">
+                <div class="product-panel-header">
+                    <h3>TODO <span>· Dry-Break Couplings · UK</span></h3>
+                    <p data-i18n="products.todoDesc">专注于干式快速接头，适用于油品和化工介质的安全流体传输。</p>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image17.jpeg" alt="TODO Tank Unit Pistons" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">TODO · TANK UNIT PISTONS</span>
+                            <h4 data-i18n="products.todo1Name">Tank Unit Pistons</h4>
+                            <p data-i18n="products.todo1Desc"></p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image18.jpeg" alt="TODO Tank Unit Rear View" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">TODO · TANK UNIT</span>
+                            <h4 data-i18n="products.todo2Name">Tank Unit — Rear View</h4>
+                            <p data-i18n="products.todo2Desc"></p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image19.jpeg" alt="TODO Series II" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">TODO · SERIES II</span>
+                            <h4 data-i18n="products.todo3Name">TODO II Series</h4>
+                            <p data-i18n="products.todo3Desc"></p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image20.jpeg" alt="2 inch Hose + Tank Unit" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">TODO · 2" DN50</span>
+                            <h4 data-i18n="products.todo4Name">2" Hose Unit + Tank Unit</h4>
+                            <p data-i18n="products.todo4Desc"></p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image21.jpeg" alt="4-Way Stainless Steel" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">TODO · 2TM HU SS · 4-WAY</span>
+                            <h4 data-i18n="products.todo5Name">Stainless Steel 4-Way Hose Unit</h4>
+                            <p data-i18n="products.todo5Desc"></p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image22.jpeg" alt="2.5 inch Hose + Tank Unit" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">TODO · 2.5" DN65</span>
+                            <h4 data-i18n="products.todo6Name">2.5" Hose + Tank Unit</h4>
+                            <p data-i18n="products.todo6Desc"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMCO Wheaton Products -->
+            <div class="product-panel" data-panel="emco">
+                <div class="product-panel-header">
+                    <h3>EMCO Wheaton <span>· Loading Arms &amp; API Couplers · Germany</span></h3>
+                    <p data-i18n="products.emcoDesc">World-leading loading arms and API dry-break couplers for marine and petrochemical loading applications.</p>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image23.jpeg" alt="API Coupler J0451" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMCO · J0451</span>
+                            <h4 data-i18n="products.emco1Name">API Dry-Break Coupler J0451</h4>
+                            <p data-i18n="products.emco1Desc">API Dry-Break Coupler J0451</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image24.jpeg" alt="API Coupler J0452" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMCO · J0452</span>
+                            <h4 data-i18n="products.emco2Name">API Dry-Break Coupler J0452</h4>
+                            <p data-i18n="products.emco2Desc">API Dry-Break Coupler J0452</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image25.jpeg" alt="API Flanged Coupler J0453" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMCO · J0453</span>
+                            <h4 data-i18n="products.emco3Name">API Flanged Dry-Break Coupler J0453</h4>
+                            <p data-i18n="products.emco3Desc">API Flanged Dry-Break Coupler J0453</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image26.jpeg" alt="E2386 Marine Loading Arm" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMCO · E2386</span>
+                            <h4 data-i18n="products.emco4Name">E2386 Marine Loading Arm</h4>
+                            <p data-i18n="products.emco4Desc">Marine Loading Arm System</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image27.jpeg" alt="E2704 Loading Arm" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMCO · E2704</span>
+                            <h4 data-i18n="products.emco5Name">E2704 Loading Arm</h4>
+                            <p data-i18n="products.emco5Desc">Standard Loading Arm</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image28.jpeg" alt="E2818 Toxic Media Loading Arm" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMCO · E2818</span>
+                            <h4 data-i18n="products.emco6Name">E2818 Toxic Media Loading Arm</h4>
+                            <p data-i18n="products.emco6Desc">Loading Arm for Toxic Media</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image29.jpeg" alt="Floating Suction Device" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMCO · FLOATING SUCTION</span>
+                            <h4 data-i18n="products.emco7Name">Floating Suction Device</h4>
+                            <p data-i18n="products.emco7Desc">Floating Suction Device</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image30.jpeg" alt="High Pressure Marine Loading Arm" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMCO · HIGH PRESSURE</span>
+                            <h4 data-i18n="products.emco8Name">High Pressure Marine Loading Arm</h4>
+                            <p data-i18n="products.emco8Desc">High Pressure Marine Loading Arm System</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anton Paar Products -->
+            <div class="product-panel" data-panel="anton">
+                <div class="product-panel-header">
+                    <h3>Anton Paar <span>· Precision Measurement · Austria</span></h3>
+                    <p data-i18n="products.antonDesc">A century-old brand offering high-end precision measuring instruments for laboratory and process applications.</p>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image31.jpeg" alt="DMA Density Meters" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">ANTON PAAR · DMA SERIES</span>
+                            <h4 data-i18n="products.anton1Name">DMA Density Meters</h4>
+                            <p data-i18n="products.anton1Desc">High-precision density measurement</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image32.jpeg" alt="Alcolyzer" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">ANTON PAAR · ALCOLYZER</span>
+                            <h4 data-i18n="products.anton2Name">Alcohol Meters (Alcolyzer)</h4>
+                            <p data-i18n="products.anton2Desc">Alcohol concentration measurement</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image33.jpeg" alt="Process Sensors" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">ANTON PAAR · PROCESS SENSORS</span>
+                            <h4 data-i18n="products.anton3Name">Inline Process Sensors</h4>
+                            <p data-i18n="products.anton3Desc">Inline Process Sensor Series</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image34.jpeg" alt="SVM 1001 Viscometer" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">ANTON PAAR · SVM 1001</span>
+                            <h4 data-i18n="products.anton4Name">SVM 1001 Stabinger Viscometer</h4>
+                            <p data-i18n="products.anton4Desc">Stabinger Viscometer</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image35.jpeg" alt="MKT Thermometer" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">ANTON PAAR · MKT SERIES</span>
+                            <h4 data-i18n="products.anton5Name">High-Precision Thermometer</h4>
+                            <p data-i18n="products.anton5Desc">MKT Series High-Precision Thermometer</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/image36.jpeg" alt="RTD System" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">ANTON PAAR · RTD SYSTEM</span>
+                            <h4 data-i18n="products.anton6Name">RTD Measurement &amp; Calibration System</h4>
+                            <p data-i18n="products.anton6Desc">RTD Temperature Calibration System</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FEEJOY Products -->
+            <div class="product-panel" data-panel="feejoy">
+                <div class="product-panel-header">
+                    <h3>FEEJOY <span>· Intelligent Sensing Solutions · China</span></h3>
+                    <p data-i18n="products.feejoyDesc">20 years of expertise in intelligent sensing solutions, specializing in level, flow, temperature, and pressure instruments for industrial IoT applications.</p>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/feejoy_radar.png" alt="RRF Radar Level Meter" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">FEEJOY · RRF</span>
+                            <h4 data-i18n="products.feejoy1Name">Radar Level Meter (RRF)</h4>
+                            <p data-i18n="products.feejoy1Desc">Non-contact radar level transmitter for solids and liquids</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/feejoy_ultrasonic.png" alt="FU Ultrasonic Level Meter" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">FEEJOY · FU</span>
+                            <h4 data-i18n="products.feejoy2Name">Ultrasonic Level Meter (FU)</h4>
+                            <p data-i18n="products.feejoy2Desc">Non-contact ultrasonic level measurement for various media</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/feejoy_vortex.png" alt="FM11 Vortex Flow Meter" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">FEEJOY · FM11</span>
+                            <h4 data-i18n="products.feejoy3Name">Vortex Flow Meter (FM11)</h4>
+                            <p data-i18n="products.feejoy3Desc">Vortex shedding flow meter for steam, gas and liquid</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/feejoy_electromagnetic.png" alt="FM10 Electromagnetic Flow Meter" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">FEEJOY · FM10</span>
+                            <h4 data-i18n="products.feejoy4Name">Electromagnetic Flow Meter (FM10)</h4>
+                            <p data-i18n="products.feejoy4Desc">Mag flow meter for conductive liquids</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/feejoy_pressure.png" alt="PI200 Pressure Transmitter" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">FEEJOY · PI200</span>
+                            <h4 data-i18n="products.feejoy5Name">Pressure Transmitter (PI200)</h4>
+                            <p data-i18n="products.feejoy5Desc">Standard-type pressure transmitter for industrial process control</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/feejoy_temperature.png" alt="TI Temperature Transmitter" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">FEEJOY · TI</span>
+                            <h4 data-i18n="products.feejoy6Name">Temperature Transmitter (TI)</h4>
+                            <p data-i18n="products.feejoy6Desc">Integrated display temperature transmitter with high accuracy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMERSON Products -->
+            <div class="product-panel active" data-panel="emerson">
+                <div class="product-panel-header">
+                    <h3>EMERSON <span>· Industrial Automation · USA</span></h3>
+                    <p data-i18n="products.emersonDesc">A global leader in industrial automation, delivering precision measurement, control valves, and analytical instrumentation for process industries worldwide.</p>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/emerson-3051.svg" alt="Rosemount 3051 Coplanar Pressure Transmitter" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMERSON · ROSEMOUNT 3051</span>
+                            <h4 data-i18n="products.emerson1Name">Coplanar Pressure Transmitter</h4>
+                            <p data-i18n="products.emerson1Desc">10-year stability, 150:1 rangedown · ±0.04% accuracy · 4-20mA HART/FOUNDATION Fieldbus/WirelessHART protocols · Patented Coplanar technology · SIL 2/3 certified · Bluetooth connectivity</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/emerson-3144p.svg" alt="Rosemount 3144P Temperature Transmitter" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMERSON · ROSEMOUNT 3144P</span>
+                            <h4 data-i18n="products.emerson2Name">High-Accuracy Temperature Transmitter</h4>
+                            <p data-i18n="products.emerson2Desc">±0.10°C digital accuracy for Pt100 RTD · Dual sensor Hot Backup™ · X-well technology eliminates thermowells · 5-year long-term stability · HART/Fieldbus protocols · SIL 3 capable</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/emerson-cmf200.svg" alt="Micro Motion ELITE CMF200 Coriolis Flow Meter" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMERSON · MICRO MOTION ELITE</span>
+                            <h4 data-i18n="products.emerson3Name">Coriolis Mass Flow Meter (CMF200)</h4>
+                            <p data-i18n="products.emerson3Desc">±0.05% mass flow accuracy · ±0.0005 g/cm³ density measurement · 100:1 turndown · 0.01-27,000 kg/h flow range · No straight pipe required · -240°C to 350°C · Self-validation diagnostics</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/emerson-5300.svg" alt="Rosemount 5300 Guided Wave Radar Level Transmitter" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMERSON · ROSEMOUNT 5300</span>
+                            <h4 data-i18n="products.emerson4Name">Guided Wave Radar Level Transmitter</h4>
+                            <p data-i18n="products.emerson4Desc">±3mm accuracy, 50m measurement range · Direct Switch Technology · SIL 2 IEC 61508 certified · Dynamic Vapor Compensation · Handles foam, vapor, turbulence · TÜV overfill prevention approved</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/emerson-dvc6200.svg" alt="Fisher FIELDVUE DVC6200 Digital Valve Controller" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMERSON · FISHER FIELDVUE</span>
+                            <h4 data-i18n="products.emerson5Name">Digital Valve Controller (DVC6200)</h4>
+                            <p data-i18n="products.emerson5Desc">HART 4-20mA communication · Linkage-less non-contact feedback · Performance diagnostics & predictive alerts · -40 to 85°C · IP66 rated · Modular design for live maintenance · SIL 3 capable</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/emerson-3812.svg" alt="Rosemount 3812 Ultrasonic Flow Meter" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">EMERSON · ROSEMOUNT 3812</span>
+                            <h4 data-i18n="products.emerson6Name">Two-Path Liquid Ultrasonic Flow Meter</h4>
+                            <p data-i18n="products.emerson6Desc">±0.3% linearity, ±0.10% repeatability · DN100-DN900 (4"-36") · No moving parts, zero pressure drop · Bi-directional flow · MeterLink™ diagnostics · -50°C to +150°C · Ideal for custody transfer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GB Power Products -->
+            <div class="product-panel" data-panel="gbpower">
+                <div class="product-panel-header">
+                    <h3>GB Power <span>· Power Solutions · China</span></h3>
+                    <p data-i18n="products.gbpowerDesc">UK-based power solutions specialist providing UPS systems, diesel generators, LV switchgear, power distribution, and advanced control systems, certified as a Schneider panel manufacturer.</p>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/gbpower-ups.svg" alt="GB Power UPS System" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">GB POWER · UPS</span>
+                            <h4 data-i18n="products.gbpower1Name">UPS System</h4>
+                            <p data-i18n="products.gbpower1Desc">3kVA to 900kW+ · Online double conversion · True on-line topology with zero transfer time · Input power factor >0.99 · THDi <3% · DSP digital control · Hot-swappable battery modules · N+1/X redundant architecture · SNMP/Modbus remote management</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/gbpower-generator.svg" alt="GB Power Diesel Generator" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">GB POWER · GENERATOR</span>
+                            <h4 data-i18n="products.gbpower2Name">Diesel Generator</h4>
+                            <p data-i18n="products.gbpower2Desc">6kVA to 3MVA · Soundproof canopy <65dB at 7m · Auto mains failure (AMF) controller · 24V DC electric start · Remote monitoring via GSM/Satellite · Fuel polishing system · Tropicalized radiator · Cummins/Perkins/Scania engine options</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/gbpower-switchgear.svg" alt="GB Power LV Switchgear Panel" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">GB POWER · SWITCHGEAR</span>
+                            <h4 data-i18n="products.gbpower3Name">LV Switchgear Panel</h4>
+                            <p data-i18n="products.gbpower3Desc">Up to 6300A rated current · Form 4 Type 7 segregation · Schneider certified panel builder · Air circuit breakers (ACB) with microprocessor protection · Type-tested assemblies per IEC 61439 · IP42-IP54 enclosure · Internal arc protection</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/gbpower-ats.svg" alt="GB Power Automatic Transfer Switch" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">GB POWER · ATS</span>
+                            <h4 data-i18n="products.gbpower4Name">Automatic Transfer Switch (ATS)</h4>
+                            <p data-i18n="products.gbpower4Desc">4-pole design · 100A to 6300A ratings · Motorized open-transition or closed-transition · Adjustable time delays · Dual source monitoring · Mechanical & electrical interlocking · Auto/manual/test modes · Fire alarm interface · BMS communication</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/gbpower-pdu.svg" alt="GB Power Power Distribution Unit" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">GB POWER · PDU</span>
+                            <h4 data-i18n="products.gbpower5Name">Power Distribution Unit (PDU)</h4>
+                            <p data-i18n="products.gbpower5Desc">Rack-mount 19" design · 3-phase input up to 400A · Per-outlet metering (POE) · IEC C13/C19 outlets · Individual circuit breaker protection · Environmental monitoring (temp/humidity) · Network management via SNMP/SSH/HTTP · Hot-swappable controller module</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/gbpower-scada.svg" alt="GB Power SCADA Control System" loading="lazy"></div>
+                        <div class="product-info">
+                            <span class="product-code">GB POWER · SCADA</span>
+                            <h4 data-i18n="products.gbpower6Name">Advanced Control System (SCADA)</h4>
+                            <p data-i18n="products.gbpower6Desc">PLC-based architecture with redundant controllers · Real-time monitoring of UPS, generators, ATS, and PDU · IEC 61131-3 programming · Modbus TCP/RTU, DNP3, IEC 61850 protocols · HMI touchscreen interface · Cloud-based remote access · Event logging & trend analysis · BMS system integration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Applications -->
+    <section class="section industries" id="industries">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">06</span>
+                <h2 class="section-title" data-i18n="industries.title">Industry Applications</h2>
+                <p class="section-subtitle" data-i18n="industries.subtitle">Serving Diverse Industrial Sectors</p>
+            </div>
+
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-char">石</div>
+                    <h3 data-i18n="industries.i1Title">Petrochemical</h3>
+                    <p data-i18n="industries.i1Desc">Safe fluid transfer solutions for petroleum refining and chemical processing.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-char">仓</div>
+                    <h3 data-i18n="industries.i2Title">Storage &amp; Logistics</h3>
+                    <p data-i18n="industries.i2Desc">Efficient loading and unloading systems for tank farms and distribution centers.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-char">船</div>
+                    <h3 data-i18n="industries.i3Title">Marine Shipping</h3>
+                    <p data-i18n="industries.i3Desc">Marine loading arms and couplers for port and vessel operations.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-char">食</div>
+                    <h3 data-i18n="industries.i4Title">Food &amp; Beverage</h3>
+                    <p data-i18n="industries.i4Desc">Hygienic fluid transfer and precision measurement for food production.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-char">制</div>
+                    <h3 data-i18n="industries.i5Title">Pharmaceutical</h3>
+                    <p data-i18n="industries.i5Desc">High-purity fluid control solutions for pharmaceutical manufacturing.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-char">能</div>
+                    <h3 data-i18n="industries.i6Title">Energy &amp; Environment</h3>
+                    <p data-i18n="industries.i6Desc">Sustainable fluid technology for energy production and environmental protection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">07</span>
+                <h2 class="section-title" data-i18n="contact.title">Contact Us</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Let's Build the Future Together</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <!-- Shanghai Office -->
+                    <div class="contact-item">
+                        <div class="contact-icon contact-icon--sh">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9C5 13.17 9.42 18.92 11.24 21.11C11.64 21.59 12.37 21.59 12.77 21.11C14.58 18.92 19 13.17 19 9C19 5.13 15.87 2 12 2Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">
+                                <span data-i18n="contact.shOfficeLabel">Shanghai Office</span>
+                            </div>
+                            <div class="contact-value">Room 2820, Building #4, No. 1068, Jiefangdong Road, Fengxian District, Shanghai, PRC</div>
+                            <div class="contact-value-cn">上海市奉贤区解放东路1068号4号楼2820室</div>
+                        </div>
+                    </div>
+
+                    <!-- Hong Kong Office -->
+                    <div class="contact-item">
+                        <div class="contact-icon contact-icon--hk">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9C5 13.17 9.42 18.92 11.24 21.11C11.64 21.59 12.37 21.59 12.77 21.11C14.58 18.92 19 13.17 19 9C19 5.13 15.87 2 12 2Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">
+                                <span data-i18n="contact.hkOfficeLabel">Hong Kong Office</span>
+                            </div>
+                            <div class="contact-value">Unit 1406A, 14/F, The Belgian Bank Building, Nos. 721-725 Nathan Road, Kowloon, Hong Kong</div>
+                            <div class="contact-value-cn">中国香港九龙弥敦道721-725号比利时银行大厦14楼1406A室</div>
+                        </div>
+                    </div>
+
+                    <!-- Tel -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 16.92V19.92C22 20.52 21.52 21 20.92 21C9.7 21 1 12.3 1 1.08C1 0.48 1.48 0 2.08 0H5.08C5.68 0 6.16 0.48 6.16 1.08C6.16 2.68 6.36 4.24 6.74 5.74C6.84 6.14 6.74 6.58 6.42 6.9L4.54 8.78C6.02 11.74 8.26 13.98 11.22 15.46L13.1 13.58C13.42 13.26 13.86 13.16 14.26 13.26C15.76 13.64 17.32 13.84 18.92 13.84C19.52 13.84 20 14.32 20 14.92" transform="translate(1 1.5)" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div>
+                            <div class="contact-label" data-i18n="contact.telLabel">Tel</div>
+                            <div class="contact-value contact-value--multi">
+                                <span class="contact-line"><strong>SH:</strong> <a href="tel:+8602131596235">+86 021-31596235</a></span>
+                                <span class="contact-line"><strong>HK:</strong> <a href="tel:+85269537349">+852-69537349</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18" r="1" fill="currentColor"/></svg>
+                        </div>
+                        <div>
+                            <div class="contact-label" data-i18n="contact.mobileLabel">Mobile</div>
+                            <div class="contact-value"><a href="tel:+8615306134087">+86 15306134087</a></div>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 7L12 13L21 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div>
+                            <div class="contact-label" data-i18n="contact.emailLabel">Email</div>
+                            <div class="contact-value"><a href="mailto:Oliver.Chen@lockloadftg.com">Oliver.Chen@lockloadftg.com</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3 data-i18n="contact.formTitle">Send Us a Message</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-i18n="contact.formName">Name *</label>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="contact.formCompany">Company</label>
+                                <input type="text" name="company">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-i18n="contact.formEmail">Email *</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="contact.formPhone">Phone</label>
+                                <input type="tel" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="contact.formSubject">Subject</label>
+                            <select name="subject">
+                                <option data-i18n="contact.formSubject1">Product Inquiry</option>
+                                <option data-i18n="contact.formSubject2">Partnership</option>
+                                <option data-i18n="contact.formSubject3">Technical Support</option>
+                                <option data-i18n="contact.formSubject4">Import / Export</option>
+                                <option data-i18n="contact.formSubject5">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="contact.formMessage">Message *</label>
+                            <textarea name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.formSubmit">Send Message</button>
+                        <div class="form-success" id="formSuccess" data-i18n="contact.formSuccess">Thank you! Your message has been sent. We'll get back to you within 24 hours.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo"><img src="assets/images/logo-new.png" alt="Lock & Load Logo" class="footer-logo-img"></div>
+                    <p class="footer-tagline">Fluid Technology · Smart Future</p>
+                    <p class="footer-tagline-cn">流体技术 · 智造未来</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.navTitle">Navigation</h4>
+                    <a href="#about" data-i18n="nav.about">About</a>
+                    <a href="#business" data-i18n="nav.business">Business</a>
+                    <a href="#products" data-i18n="nav.products">Products</a>
+                    <a href="#contact" data-i18n="nav.contact">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.brandsTitle">Strategic Partner Brands</h4>
+                    <a>TODO — UK</a>
+                    <a>EMCO Wheaton — Germany</a>
+                    <a>Anton Paar — Austria</a>
+                    <a>FEEJOY — China</a>
+                    <a>EMERSON — USA</a>
+                    <a>GB Power — UK</a>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-i18n="footer.contactTitle">Contact</h4>
+                    <p><strong>SH:</strong> Room 2820, Bldg #4, No. 1068 Jiefangdong Rd, Fengxian, Shanghai</p>
+                    <p><strong>HK:</strong> Unit 1406A, 14/F, Belgian Bank Bldg, 721-725 Nathan Rd, Kowloon</p>
+                    <p><a href="tel:+8602131596235">+86 021-31596235</a> / <a href="tel:+85269537349">+852-69537349</a></p>
+                    <p><a href="mailto:Oliver.Chen@lockloadftg.com">Oliver.Chen@lockloadftg.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Shanghai Lock&amp;Load Fluid Transfer Technology Co., Ltd. &amp; Lock and Load Limited. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 16V4M4 10L10 4L16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

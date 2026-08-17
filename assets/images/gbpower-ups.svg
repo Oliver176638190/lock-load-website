@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bgG-UPS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5f8fc"/>
+      <stop offset="100%" stop-color="#e8eef5"/>
+    </linearGradient>
+    <linearGradient id="cabG-UPS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a6a9a"/>
+      <stop offset="100%" stop-color="#1a3d6a"/>
+    </linearGradient>
+    <linearGradient id="doorG-UPS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a4a6a"/>
+      <stop offset="100%" stop-color="#1a2d4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgG-UPS)"/>
+  <!-- Floor shadow -->
+  <ellipse cx="200" cy="245" rx="90" ry="6" fill="rgba(0,0,0,0.15)"/>
+  <g transform="translate(200,130)">
+    <!-- UPS Cabinet Body -->
+    <rect x="-70" y="-100" width="140" height="200" rx="6" fill="url(#cabG-UPS)"/>
+    <!-- Cabinet Door -->
+    <rect x="-63" y="-93" width="126" height="186" rx="4" fill="url(#doorG-UPS)"/>
+    <!-- Top vent -->
+    <rect x="-55" y="-88" width="110" height="12" rx="2" fill="#0a1a2a" opacity="0.7"/>
+    <line x1="-50" y1="-82" x2="50" y2="-82" stroke="#3a6a9a" stroke-width="0.5"/>
+    <line x1="-50" y1="-78" x2="50" y2="-78" stroke="#3a6a9a" stroke-width="0.5"/>
+    <!-- Display Panel -->
+    <rect x="-45" y="-68" width="90" height="30" rx="3" fill="#0a1929"/>
+    <rect x="-40" y="-63" width="80" height="20" rx="2" fill="#0d2818"/>
+    <text x="0" y="-52" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#00ff88" text-anchor="middle">UPS 900kW</text>
+    <text x="0" y="-44" font-family="Arial,sans-serif" font-size="6" fill="#00cc66" text-anchor="middle">ONLINE · 99.9%</text>
+    <!-- LED Indicators -->
+    <circle cx="-35" cy="-28" r="4" fill="#00ff88"/>
+    <circle cx="-18" cy="-28" r="4" fill="#3a6a9a" opacity="0.5"/>
+    <circle cx="-1" cy="-28" r="4" fill="#3a6a9a" opacity="0.5"/>
+    <circle cx="16" cy="-28" r="4" fill="#3a6a9a" opacity="0.5"/>
+    <circle cx="33" cy="-28" r="4" fill="#ff9500" opacity="0.8"/>
+    <!-- Battery modules -->
+    <rect x="-50" y="-15" width="100" height="28" rx="3" fill="#1a2d4a"/>
+    <rect x="-45" y="-12" width="44" height="22" rx="2" fill="#0a1a2a" stroke="#3a6a9a" stroke-width="1"/>
+    <rect x="1" y="-12" width="44" height="22" rx="2" fill="#0a1a2a" stroke="#3a6a9a" stroke-width="1"/>
+    <text x="-23" y="2" font-family="Arial,sans-serif" font-size="7" fill="#3a6a9a" text-anchor="middle">BAT 01</text>
+    <text x="23" y="2" font-family="Arial,sans-serif" font-size="7" fill="#3a6a9a" text-anchor="middle">BAT 02</text>
+    <!-- Lower section -->
+    <rect x="-50" y="20" width="100" height="40" rx="3" fill="#1a2d4a"/>
+    <!-- Breaker -->
+    <rect x="-42" y="25" width="24" height="30" rx="2" fill="#0a1a2a" stroke="#4a6a8a" stroke-width="1"/>
+    <rect x="-12" y="25" width="24" height="30" rx="2" fill="#0a1a2a" stroke="#4a6a8a" stroke-width="1"/>
+    <rect x="18" y="25" width="24" height="30" rx="2" fill="#0a1a2a" stroke="#4a6a8a" stroke-width="1"/>
+    <!-- Switches -->
+    <rect x="-38" y="30" width="16" height="4" rx="1" fill="#ff9500"/>
+    <rect x="-8" y="30" width="16" height="4" rx="1" fill="#00ff88"/>
+    <rect x="22" y="30" width="16" height="4" rx="1" fill="#3a6a9a" opacity="0.5"/>
+    <!-- Handle -->
+    <rect x="-3" y="70" width="6" height="20" rx="2" fill="#0a1a2a"/>
+    <!-- Base -->
+    <rect x="-75" y="100" width="150" height="8" fill="#1a1a1a"/>
+  </g>
+  <text x="200" y="265" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#1a3d6a" text-anchor="middle">GB POWER · UPS SYSTEM</text>
+  <text x="200" y="280" font-family="Arial,sans-serif" font-size="9" fill="#3a6a9a" text-anchor="middle">3kVA – 900kW+ · ONLINE DOUBLE CONVERSION</text>
+</svg>

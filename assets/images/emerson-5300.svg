@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bgGrad-p4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8f2f5"/>
+      <stop offset="100%" stop-color="#d0dde5"/>
+    </linearGradient>
+    <linearGradient id="tankGrad-p4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a8c5d8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#6090a8" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="liquidGrad-p4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a90c8"/>
+      <stop offset="100%" stop-color="#1d4f7a"/>
+    </linearGradient>
+    <linearGradient id="probeGrad-p4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#888"/>
+      <stop offset="50%" stop-color="#bbb"/>
+      <stop offset="100%" stop-color="#666"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgGrad-p4)"/>
+  <g transform="translate(200,150)">
+    <rect x="-100" y="-90" width="200" height="180" rx="10" fill="url(#tankGrad-p4)" stroke="#6090a8" stroke-width="2"/>
+    <rect x="-100" y="20" width="200" height="70" fill="url(#liquidGrad-p4)" opacity="0.7"/>
+    <path d="M -100 20 Q -80 15 -60 20 T -20 20 T 20 20 T 60 20 T 100 20" stroke="#fff" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M -100 30 Q -80 25 -60 30 T -20 30 T 20 30 T 60 30 T 100 30" stroke="#fff" stroke-width="0.5" fill="none" opacity="0.3"/>
+    <rect x="-105" y="-100" width="210" height="14" rx="3" fill="#1a3a5a"/>
+    <rect x="-3" y="-90" width="6" height="170" fill="url(#probeGrad-p4)"/>
+    <circle cx="0" cy="80" r="4" fill="#ff9500"/>
+    <rect x="-50" y="-110" width="100" height="30" rx="4" fill="#1d4f7a"/>
+    <rect x="-45" y="-105" width="90" height="20" rx="2" fill="#0a1929"/>
+    <text x="0" y="-92" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#ff9500" text-anchor="middle">5300 GWR</text>
+    <rect x="-15" y="-107" width="30" height="2" fill="#4a90c8"/>
+    <circle cx="-25" cy="-95" r="2" fill="#4a90c8"/>
+    <circle cx="-15" cy="-95" r="2" fill="#4a90c8"/>
+    <circle cx="-5" cy="-95" r="2" fill="#4a90c8"/>
+    <circle cx="5" cy="-95" r="2" fill="#4a90c8"/>
+    <circle cx="15" cy="-95" r="2" fill="#4a90c8"/>
+    <circle cx="25" cy="-95" r="2" fill="#4a90c8"/>
+    <g stroke="#ff9500" stroke-width="1" fill="none" opacity="0.7">
+      <path d="M 0 -60 Q 8 -55 0 -50 Q -8 -45 0 -40"/>
+      <path d="M 0 -30 Q 6 -27 0 -24 Q -6 -21 0 -18"/>
+      <path d="M 0 0 Q 6 3 0 6 Q -6 9 0 12"/>
+    </g>
+    <line x1="-110" y1="20" x2="110" y2="20" stroke="#ff9500" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <text x="-95" y="15" font-family="Arial,sans-serif" font-size="6" fill="#ff9500">LEVEL</text>
+  </g>
+  <text x="200" y="265" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#1d4f7a" text-anchor="middle">ROSEMOUNT 5300</text>
+  <text x="200" y="280" font-family="Arial,sans-serif" font-size="9" fill="#4a90c8" text-anchor="middle">GUIDED WAVE RADAR LEVEL</text>
+</svg>

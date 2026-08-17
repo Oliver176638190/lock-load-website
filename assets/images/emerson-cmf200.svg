@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bgGrad-p3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0f5fa"/>
+      <stop offset="100%" stop-color="#dde7f0"/>
+    </linearGradient>
+    <linearGradient id="tubeGrad-p3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#888"/>
+      <stop offset="50%" stop-color="#c0c0c0"/>
+      <stop offset="100%" stop-color="#666"/>
+    </linearGradient>
+    <linearGradient id="sensorGrad-p3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a90c8"/>
+      <stop offset="100%" stop-color="#1d4f7a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgGrad-p3)"/>
+  <g transform="translate(200,150)">
+    <ellipse cx="0" cy="80" rx="120" ry="6" fill="rgba(0,0,0,0.15)"/>
+    <path d="M -100 -50 Q -120 -50 -120 -30 L -120 70 Q -120 90 -100 90 L 100 90 Q 120 90 120 70 L 120 -30 Q 120 -50 100 -50 Z" fill="url(#tubeGrad-p3)" opacity="0.9"/>
+    <rect x="-105" y="-55" width="210" height="12" rx="3" fill="#666"/>
+    <rect x="-105" y="83" width="210" height="12" rx="3" fill="#666"/>
+    <path d="M -90 -20 Q -90 -10 -85 -5 L -85 40 Q -90 45 -90 55 L -90 65 Q -90 70 -85 70 L -45 70 Q -40 70 -40 65 L -40 55 Q -40 50 -45 45 L -45 -10 Q -40 -5 -40 -15 L -40 -20 Q -40 -25 -45 -25 L -85 -25 Q -90 -25 -90 -20 Z" fill="url(#tubeGrad-p3)"/>
+    <path d="M 90 -20 Q 90 -10 85 -5 L 85 40 Q 90 45 90 55 L 90 65 Q 90 70 85 70 L 45 70 Q 40 70 40 65 L 40 55 Q 40 50 45 45 L 45 -10 Q 40 -5 40 -15 L 40 -20 Q 40 -25 45 -25 L 85 -25 Q 90 -25 90 -20 Z" fill="url(#tubeGrad-p3)"/>
+    <g transform="translate(-65,22)">
+      <rect x="-15" y="-12" width="30" height="24" rx="3" fill="url(#sensorGrad-p3)"/>
+      <circle cx="0" cy="0" r="6" fill="#0a1929"/>
+      <circle cx="0" cy="0" r="3" fill="#ff9500"/>
+    </g>
+    <g transform="translate(65,22)">
+      <rect x="-15" y="-12" width="30" height="24" rx="3" fill="url(#sensorGrad-p3)"/>
+      <circle cx="0" cy="0" r="6" fill="#0a1929"/>
+      <circle cx="0" cy="0" r="3" fill="#ff9500"/>
+    </g>
+    <g transform="translate(0,-40)">
+      <rect x="-25" y="-15" width="50" height="30" rx="4" fill="url(#sensorGrad-p3)"/>
+      <rect x="-20" y="-10" width="40" height="12" rx="2" fill="#0a1929"/>
+      <text x="0" y="0" font-family="Arial,sans-serif" font-size="7" font-weight="bold" fill="#4a90c8" text-anchor="middle">CMF200</text>
+    </g>
+    <path d="M -110 0 Q -130 0 -135 20" stroke="#ff9500" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 110 0 Q 130 0 135 20" stroke="#ff9500" stroke-width="2" fill="none" opacity="0.6"/>
+    <text x="-115" y="50" font-family="Arial,sans-serif" font-size="6" fill="#1d4f7a">IN</text>
+    <text x="105" y="50" font-family="Arial,sans-serif" font-size="6" fill="#1d4f7a">OUT</text>
+  </g>
+  <text x="200" y="265" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#1d4f7a" text-anchor="middle">MICRO MOTION ELITE</text>
+  <text x="200" y="280" font-family="Arial,sans-serif" font-size="9" fill="#4a90c8" text-anchor="middle">CORIOLIS MASS FLOW METER</text>
+</svg>
