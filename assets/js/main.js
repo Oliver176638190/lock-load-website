@@ -155,19 +155,26 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            // Collect form data
             const formData = new FormData(contactForm);
             const data = Object.fromEntries(formData);
 
-            // Here you would normally send to a backend API
-            // For now, we'll simulate a successful submission
-            console.log('Form submission:', data);
+            // Build email content
+            const subject = encodeURIComponent(`[Website Inquiry] ${data.subject || 'General Inquiry'}`);
+            const body = encodeURIComponent(
+                `Name: ${data.name || ''}\n` +
+                `Company: ${data.company || ''}\n` +
+                `Email: ${data.email || ''}\n` +
+                `Phone: ${data.phone || ''}\n` +
+                `Subject: ${data.subject || ''}\n\n` +
+                `Message:\n${data.message || ''}`
+            );
+
+            // Open email client
+            window.location.href = `mailto:Oliver.Chen@lockloadftg.com?subject=${subject}&body=${body}`;
 
             // Show success message
             formSuccess.classList.add('show');
             contactForm.reset();
-
-            // Hide success message after 5 seconds
             setTimeout(() => {
                 formSuccess.classList.remove('show');
             }, 5000);
