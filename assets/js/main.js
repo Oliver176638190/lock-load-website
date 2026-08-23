@@ -152,32 +152,47 @@ document.addEventListener('DOMContentLoaded', () => {
     const formSuccess = document.getElementById('formSuccess');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
             const formData = new FormData(contactForm);
             const data = Object.fromEntries(formData);
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.textContent;
 
-            // Build email content
-            const subject = encodeURIComponent(`[Website Inquiry] ${data.subject || 'General Inquiry'}`);
-            const body = encodeURIComponent(
-                `Name: ${data.name || ''}\n` +
-                `Company: ${data.company || ''}\n` +
-                `Email: ${data.email || ''}\n` +
-                `Phone: ${data.phone || ''}\n` +
-                `Subject: ${data.subject || ''}\n\n` +
-                `Message:\n${data.message || ''}`
-            );
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
 
-            // Open email client
-            window.location.href = `mailto:Oliver.Chen@lockloadftg.com?subject=${subject}&body=${body}`;
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
 
-            // Show success message
-            formSuccess.classList.add('show');
-            contactForm.reset();
-            setTimeout(() => {
-                formSuccess.classList.remove('show');
-            }, 5000);
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    // Show success message
+                    formSuccess.classList.add('show');
+                    contactForm.reset();
+                    setTimeout(() => {
+                        formSuccess.classList.remove('show');
+                    }, 5000);
+                } else {
+                    throw new Error(result.message || 'Form submission failed');
+                }
+            } catch (error) {
+                console.error('Form submission error:', error);
+                alert('Failed to send message. Please try again or email us directly at Oliver.Chen@lockloadftg.com');
+            } finally {
+                submitBtn.textContent = originalBtnText;
+                submitBtn.disabled = false;
+            }
         });
     }
 
