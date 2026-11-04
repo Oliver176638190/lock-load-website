@@ -927,6 +927,65 @@
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 16V4M4 10L10 4L16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
 
+    <!-- Image Lightbox -->
+    <div id="imageLightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div class="lightbox-caption">
+            <a id="lightboxDownload" download class="lightbox-download">Download Image / 下载图片</a>
+        </div>
+    </div>
+
+    <style>
+    .lightbox {
+        display: none; position: fixed; z-index: 9999; padding-top: 60px; left: 0; top: 0;
+        width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.92);
+    }
+    .lightbox-content {
+        margin: auto; display: block; max-width: 90%; max-height: 75vh; object-fit: contain;
+        border-radius: 8px; animation: zoomIn 0.3s ease;
+    }
+    @keyframes zoomIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .lightbox-close {
+        position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold;
+        cursor: pointer; transition: 0.3s;
+    }
+    .lightbox-close:hover, .lightbox-close:focus { color: #bbb; text-decoration: none; cursor: pointer; }
+    .lightbox-caption { text-align: center; padding: 15px; color: #ccc; }
+    .lightbox-download {
+        display: inline-block; padding: 10px 28px; background: #2563eb; color: #fff;
+        border-radius: 6px; text-decoration: none; font-size: 15px; transition: background 0.2s;
+    }
+    .lightbox-download:hover { background: #1d4ed8; }
+    .product-img img { cursor: zoom-in; transition: transform 0.2s; }
+    @media only screen and (max-width: 700px) { .lightbox-content { max-width: 100%; } }
+    </style>
+
+    <script>
+    (function() {
+        const lightbox = document.getElementById('imageLightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const downloadLink = document.getElementById('lightboxDownload');
+        const closeBtn = document.querySelector('.lightbox-close');
+
+        document.querySelectorAll('.product-img img').forEach(img => {
+            img.addEventListener('click', function() {
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.src;
+                downloadLink.href = this.src;
+                // use alt text as suggested filename
+                const name = this.alt.replace(/[^a-z0-9]/gi, '_').toLowerCase() || 'product';
+                downloadLink.download = name + '.jpg';
+            });
+        });
+
+        function closeLightbox() { lightbox.style.display = 'none'; }
+        closeBtn.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', function(e) { if (e.target === lightbox) closeLightbox(); });
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });
+    })();
+    </script>
+
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
